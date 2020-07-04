@@ -12,7 +12,6 @@ export const addUser = ({name}:any) => {
   if(usernameTaken) return {error: 'Nickname taken, please try another'};
 
   users.push({name})
-  console.log(users);
   return {name}
 }
 
