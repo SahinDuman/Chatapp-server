@@ -7,12 +7,11 @@ router.get("/", (req: Request, res:Response) => {
 });
 
 router.post("/register", (req: Request, res:Response) => {
-  console.log('reqbody:::', req.body);
-  const user = addUser(req.body);
-  if(user.error) {
-    res.send({error: user.error})
+  const {error, name} = addUser(req.body);
+  if(error) {
+    res.send({error})
   } else {
-    res.send({name: user.user, error: false})
+    res.send({name, error: false})
   }
 });
 
