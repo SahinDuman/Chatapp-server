@@ -1,38 +1,36 @@
-import express, {Application, Request, Response} from 'express';
 import http from 'http';
+import express from 'express';
 import socketio from 'socket.io';
 import cors from 'cors';
-import bodyParser from 'body-parser';
+import bodyParser from 'body-parser'
 
+import { addUser }  from './users'
 import router from './router';
-import {addUser} from './users'
 
-const app: Application = express();
+const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-app.use(cors());
 app.use(bodyParser.json())
+app.use(cors());
 app.use(router);
 
-//GLOBAL CONFIGURABLE VARIABLES
 const CHATROOM:string = 'chatroom';
 const CHATBOT:string = 'Aslan';
 const INACTIVITYTIMELIMIT:number = 60000; //1 minute
-//-------------------------------------------------
 
-/* io.on('connect', (socket) => {
-  socket.on('enteringChat', ({name}, callback) => {
-    const {error, newUser} = addUser({name, id: socket.id});
+io.on('connect', (socket) => {
 
-    if(error) return callback(error);
-
+  socket.on('entered_chat', ({ name }, callback) => {
     socket.join(CHATROOM);
-    //socket.emit('adminMessage', {admin: `ADMIN: ${CHATBOT}`, message: `${newUser?.name || ''} has joined the chat. Hello friend!`});
-    socket.broadcast.to(CHATROOM).emit('adminMessage', {admin: `ADMIN: ${CHATBOT}`, message: `${newUser?.name || ''} has joined the chat. Hello friend!`});
+
+    socket.emit('adminMessage', { user: `Admin: ${CHATBOT}`, text: `$Welcome to the chatroom ${name}!` });
+    socket.broadcast.to(name).emit('adminMessage', { user: `Admin: ${CHATBOT}`, text: `${name} has joined the chat!` });
 
     callback();
-  })
-}) */
+  });
 
-app.listen(process.env.PORT || 5000, () => console.log('server running'));
+
+});
+
+server.listen(process.env.PORT || 5000, () => console.log(`Server has started.`));
