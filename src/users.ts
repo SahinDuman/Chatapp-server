@@ -1,14 +1,11 @@
 interface User {
   name: string,
-  //trimmedName: string,
   id?: string
 }
 
 let users: User[] = [];
 
-export const addUser = ({name}:any) => {
-  //const trimmedName = trimName(name);
-  
+export const addUser = ({name}:any) => {  
   const usernameTaken = users.find(user => user.name === name);
   if(usernameTaken) return {error: 'Nickname taken, please try another'};
 
@@ -17,7 +14,6 @@ export const addUser = ({name}:any) => {
 }
 
 export const giveUserSocketId = (name:string, id:string) => {
-  //const trimmedName = trimName(name);
   const index = users.findIndex(user => user.name === name);
 
   if(index !== -1) {
@@ -35,5 +31,7 @@ export const removeUser = (id:string) => {
 
   if(index !== -1) return users.splice(index, 1)[0];
 }
+
+export const findUserById = (id:string) => users.find((user:User) => user.id === id);
 
 const trimName = (name:string) => name.trim().toLocaleLowerCase();

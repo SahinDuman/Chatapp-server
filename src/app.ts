@@ -4,12 +4,12 @@ import socketio from 'socket.io';
 import cors from 'cors';
 import bodyParser from 'body-parser'
 
-import {giveUserSocketId, removeUser }  from './users'
+import {giveUserSocketId, findUserById, removeUser }  from './users'
 import router from './router';
 
 const CHATROOM:string = 'chatroom';
 const CHATBOT:string = 'BOT: Aslan';
-const INACTIVITYTIMELIMIT:number = 10000;
+const INACTIVITYTIMELIMIT:number = 60000;
 
 const app = express();
 const server = http.createServer(app);
@@ -19,9 +19,19 @@ app.use(bodyParser.json())
 app.use(cors());
 app.use(router);
 
-
-
 io.on('connect', (socket) => {
+  let inactivityTimeout: NodeJS.Timeout | null = null;
+
+  const ifUserInactive = (name:string) => {
+
+  console.log('USER INACTIVE!', name)
+
+  socket.emit('inactive', {message: 'You got disconnected due to inactivity'});
+  socket.leave(CHATROOM);
+  socket.broadcast.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message: `${name} was disconnected due to inactivity`});
+
+  }
+
 
   socket.on('entered_chat', ({ user }, callback) => {
     const userWithId = giveUserSocketId(user.name, socket.id);
@@ -30,43 +40,48 @@ io.on('connect', (socket) => {
     socket.emit('adminMessage', { user: userWithId, name: CHATBOT, message: `Welcome to the chatroom ${user.name}!`, role: 'admin'});
 
     socket.broadcast.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message: `${user.name} has joined the chat!`, role: 'admin'});
+
+    inactivityTimeout = setTimeout(() => {
+      ifUserInactive(user.name);
+    }, INACTIVITYTIMELIMIT);
     
     callback();
   });
 
   socket.on('message', (message) => {
     //write messages to file later
-    console.log('message:::', message);
+
+    if(inactivityTimeout) {
+      clearTimeout(inactivityTimeout);
+
+      inactivityTimeout = setTimeout(() => {
+        ifUserInactive(message.name);
+      }, INACTIVITYTIMELIMIT); 
+    }
 
     socket.emit('message', { name: message.name, message: message.message, role: 'client' });
     socket.broadcast.to(CHATROOM).emit('message', { name: message.name, message: message.message, role: 'other' });
+
   })
 
   socket.on('leave_chat', ({user}, callback) => {
-    socket.emit('leave_chat', {message: 'You left the chat!'})
-    socket.leave(CHATROOM);
     socket.to(CHATROOM).emit('adminMessage', { user: CHATBOT, text: `${user.name} has left the chat!` });
+    socket.emit('leave_chat', {message: 'Hope you had fun, bye!'})
+    socket.leave(CHATROOM);
 
     callback();
   })
 
-/*   socket.on('disconnect', (reason) => {
-    let userMessage;
-    let chatroomMessage;
-    console.log(reason);
-
-    if(reason === 'ping timeout') {
-      userMessage = 'You got disconnected from the chat due to inactivity';
-      chatroomMessage = `was disconnected from the chat due to inactivity`;
-    } else {
-      userMessage = 'You got disconnected from the chat';
-      chatroomMessage = ` was disconnected from the chat`;
+  socket.on('disconnect', (reasonu) => {
+    const {name} = findUserById(socket.id) || {name: ''};
+    
+    socket.to(CHATROOM).emit('adminMessage', { user: CHATBOT, text: `${name} left the chat, connection lost` });
+    removeUser(socket.id);
+    if(inactivityTimeout) {
+      clearTimeout(inactivityTimeout);
+      inactivityTimeout = null;
     }
-
-    socket.emit('disconnect', { message: userMessage });
-    socket.leave(CHATROOM);
-    socket.to(CHATROOM).emit('adminMessage', { user: `Admin: ${CHATBOT}`, text: chatroomMessage });
-  }) */
+  })
 });
 
 server.listen(process.env.PORT || 5000, () => console.log(`Server has started.`));
