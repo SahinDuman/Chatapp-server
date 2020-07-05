@@ -8,7 +8,7 @@ import {giveUserSocketId, removeUser }  from './users'
 import router from './router';
 
 const CHATROOM:string = 'chatroom';
-const CHATBOT:string = 'Aslan';
+const CHATBOT:string = 'BOT: Aslan';
 const INACTIVITYTIMELIMIT:number = 10000;
 
 const app = express();
@@ -27,9 +27,9 @@ io.on('connect', (socket) => {
     const userWithId = giveUserSocketId(user.name, socket.id);
     socket.join(CHATROOM);
     
-    socket.emit('adminMessage', { user: userWithId, name: `Admin: ${CHATBOT}`, message: `$Welcome to the chatroom ${user.name}!`, role: 'admin'});
+    socket.emit('adminMessage', { user: userWithId, name: CHATBOT, message: `Welcome to the chatroom ${user.name}!`, role: 'admin'});
 
-    socket.broadcast.to(CHATROOM).emit('adminMessage', { name: `Admin: ${CHATBOT}`, message: `${user.name} has joined the chat!`, role: 'admin'});
+    socket.broadcast.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message: `${user.name} has joined the chat!`, role: 'admin'});
     
     callback();
   });
@@ -45,7 +45,7 @@ io.on('connect', (socket) => {
   socket.on('leave_chat', ({user}, callback) => {
     socket.emit('leave_chat', {message: 'You left the chat!'})
     socket.leave(CHATROOM);
-    socket.to(CHATROOM).emit('adminMessage', { user: `Admin: ${CHATBOT}`, text: `${user.name} has left the chat!` });
+    socket.to(CHATROOM).emit('adminMessage', { user: CHATBOT, text: `${user.name} has left the chat!` });
 
     callback();
   })
