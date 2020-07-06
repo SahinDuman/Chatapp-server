@@ -1,0 +1,178 @@
+{"name":"asadasdasd","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:16:28"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:16:28"}
+{"name":"asadasdasd","id":"whLPpOFTBrB1yRy4AAAA","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:16:28"}
+{"name":"dasdasdas","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:16:31"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:16:31"}
+{"name":"dasdasdas","id":"chdtDWS0HB5Jr5xbAAAB","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:16:31"}
+{"name":"dasdasdas","chatMessage":"asdasdas","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 16:16:37"}
+{"name":"asadasdasd","id":"whLPpOFTBrB1yRy4AAAA","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:16:42"}
+{"name":"asadasdasd","id":"whLPpOFTBrB1yRy4AAAA","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:16:42"}
+{"name":"asdasdasd","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:16:51"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:16:51"}
+{"name":"asdasdasd","id":"mqsHTpss9c-gjVH6AAAC","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:16:51"}
+{"name":"dasdasdas","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:16:58"}
+{"name":"dasdasdas","id":"chdtDWS0HB5Jr5xbAAAB","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:16:58"}
+{"name":"dsadas","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:17:45"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:17:45"}
+{"name":"dsadas","id":"_7s8km1Q53lbX6crAAAD","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:17:45"}
+{"name":"asdasdasd","id":"mqsHTpss9c-gjVH6AAAC","level":"info","message":"USER DISCONNECTED DUE TO INACTIVITY","timestamp":"2020-07-06 16:17:51"}
+{"name":"asdasdasd","id":"mqsHTpss9c-gjVH6AAAC","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:17:51"}
+{"name":"dsadas","id":"_7s8km1Q53lbX6crAAAD","level":"info","message":"USER DISCONNECTED DUE TO INACTIVITY","timestamp":"2020-07-06 16:18:45"}
+{"name":"dsadas","id":"_7s8km1Q53lbX6crAAAD","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:18:45"}
+{"name":"dasdas","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:21:25"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:21:26"}
+{"name":"dasdas","id":"ACsx5wWucZHtSpQxAAAA","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:21:26"}
+{"name":"dsadsad","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:21:29"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:21:29"}
+{"name":"dsadsad","id":"xBeD4A6VF-9v-wNSAAAB","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:21:29"}
+{"name":"dasdas","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:21:33"}
+{"name":"dasdas","id":"ACsx5wWucZHtSpQxAAAA","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:21:33"}
+{"name":"sadasda","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:22:13"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:22:13"}
+{"name":"sadasda","id":"RL9tM40OoQV65JDDAAAA","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:22:13"}
+{"name":"dsadsadas","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:22:16"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:22:16"}
+{"name":"dsadsadas","id":"t1h_Ce_QU5XyMwHzAAAB","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:22:16"}
+{"name":"sadasda","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:22:20"}
+{"name":"sadasda","id":"RL9tM40OoQV65JDDAAAA","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:22:20"}
+{"name":"asdasd","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:22:37"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:22:38"}
+{"name":"asdasd","id":"xiHyTSD-vhGnTYMaAAAC","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:22:38"}
+{"name":"dsadsa","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:23:24"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:23:24"}
+{"name":"dsadsa","id":"489OAgc0rjOHlQ9MAAAA","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:23:24"}
+{"name":"asdasda","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:23:27"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:23:27"}
+{"name":"asdasda","id":"0r7pgY2hIHNZVQ2kAAAB","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:23:27"}
+{"name":"dsadsa","chatMessage":"sadsad","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 16:23:32"}
+{"name":"asdasda","chatMessage":"asdasd","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 16:23:35"}
+{"name":"dsadsa","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:23:38"}
+{"name":"dsadsa","id":"489OAgc0rjOHlQ9MAAAA","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:23:38"}
+{"name":"dsa","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:23:49"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:23:49"}
+{"name":"dsa","id":"ue3FFoV1TitPopQjAAAC","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:23:49"}
+{"name":"asdasda","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:23:56"}
+{"name":"asdasda","id":"0r7pgY2hIHNZVQ2kAAAB","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:23:56"}
+{"name":"dsadasd","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:24:55"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:24:55"}
+{"name":"dsadasd","id":"-gJU0o9PFlKU6KEoAAAA","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:24:55"}
+{"name":"asdasd","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:24:58"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:24:58"}
+{"name":"asdasd","id":"dqeaKSgt41BGKe4kAAAB","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:24:58"}
+{"name":"dsadasd","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:25:01"}
+{"name":"dsadasd","id":"-gJU0o9PFlKU6KEoAAAA","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:25:02"}
+{"name":"asdasd","id":"dqeaKSgt41BGKe4kAAAB","level":"info","message":"USER DISCONNECTED DUE TO INACTIVITY","timestamp":"2020-07-06 16:25:58"}
+{"name":"asdasd","id":"dqeaKSgt41BGKe4kAAAB","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:25:58"}
+{"name":"asadas","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:26:17"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:26:17"}
+{"name":"asadas","id":"t2O6X8t3JahAirgoAAAC","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:26:17"}
+{"name":"dasdas","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:26:28"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:26:28"}
+{"name":"dasdas","id":"oxK0UnakuCHneVHyAAAD","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:26:28"}
+{"name":"dasdas","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:26:30"}
+{"name":"dasdas","id":"oxK0UnakuCHneVHyAAAD","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:26:30"}
+{"name":"asadas","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:26:39"}
+{"name":"asadas","id":"t2O6X8t3JahAirgoAAAC","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:26:39"}
+{"name":"dasdasda","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:27:20"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:27:20"}
+{"name":"dasdasda","id":"TFmKFgPdSkJgJ7pJAAAE","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:27:20"}
+{"name":"dasdasda","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:27:22"}
+{"name":"dasdasda","id":"TFmKFgPdSkJgJ7pJAAAE","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:27:22"}
+{"name":"dasdsad","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:27:41"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:27:41"}
+{"name":"dasdsad","id":"y301e7lTYIhBncLNAAAF","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:27:41"}
+{"name":"asdasda","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:27:44"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:27:44"}
+{"name":"asdasda","id":"FJ_plI1I7b6hW5aZAAAG","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:27:44"}
+{"name":"dasdsad","id":"","infoBox":false,"infoBoxClass":"white","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:27:51"}
+{"name":"dasdsad","id":"y301e7lTYIhBncLNAAAF","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:27:51"}
+{"name":"asdasda","id":"FJ_plI1I7b6hW5aZAAAG","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:28:30"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:28:35"}
+{"name":"dsadad","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:28:35"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:28:36"}
+{"name":"dsadad","id":"ddOFpn8JGT2Ot6X-AAAI","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:28:36"}
+{"name":"asdasd","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:28:39"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:28:39"}
+{"name":"asdasd","id":"Vvr_3U0JyOwT8l5-AAAJ","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:28:39"}
+{"name":"asdasd","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:28:42"}
+{"name":"asdasd","id":"Vvr_3U0JyOwT8l5-AAAJ","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:28:42"}
+{"name":"dsadad","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:29:19"}
+{"name":"dsadad","id":"ddOFpn8JGT2Ot6X-AAAI","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:29:19"}
+{"name":"asdasdsad","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:29:52"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:29:52"}
+{"name":"asdasdsad","id":"m3rowsgNFNwX6xH3AAAK","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:29:52"}
+{"name":"asdasd","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:29:56"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:29:57"}
+{"name":"asdasd","id":"FcVyqapZmPYyyJQEAAAL","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:29:57"}
+{"name":"","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:30:00"}
+{"name":"asdasd","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:30:00"}
+{"name":"asdasd","id":"FcVyqapZmPYyyJQEAAAL","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:30:00"}
+{"name":"asdasdsad","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:30:31"}
+{"name":"asdasdsad","id":"m3rowsgNFNwX6xH3AAAK","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:30:31"}
+{"name":"dsadas","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:32:28"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:32:28"}
+{"name":"dsadas","id":"XAuj3HLQrogQugsyAAAM","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:32:28"}
+{"name":"sdasd","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:32:31"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:32:32"}
+{"name":"sdasd","id":"ZYQAW5_keud3AtjVAAAN","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:32:32"}
+{"name":"sdasd","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:32:45"}
+{"name":"sdasd","id":"ZYQAW5_keud3AtjVAAAN","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:32:45"}
+{"name":"dsadas","id":"XAuj3HLQrogQugsyAAAM","level":"info","message":"USER DISCONNECTED DUE TO INACTIVITY","timestamp":"2020-07-06 16:33:28"}
+{"name":"dsadas","id":"XAuj3HLQrogQugsyAAAM","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:33:28"}
+{"name":"DSADSADA","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:34:37"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:34:38"}
+{"name":"DSADSADA","id":"MFK3nAf-DFQxbSm2AAAO","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:34:38"}
+{"name":"DSADSADA","id":"MFK3nAf-DFQxbSm2AAAO","level":"info","message":"USER DISCONNECTED DUE TO INACTIVITY","timestamp":"2020-07-06 16:35:38"}
+{"name":"DSADSADA","id":"MFK3nAf-DFQxbSm2AAAO","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:35:38"}
+{"name":"asdasd","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:41:39"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:41:39"}
+{"name":"asdasd","id":"Z3vD9c0AVmdS7EDVAAAA","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:41:39"}
+{"name":"asdasda","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:48:12"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:48:12"}
+{"name":"asdasda","id":"nGXDO-dntyPbYfcXAAAA","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:48:12"}
+{"name":"asdasda","id":"nGXDO-dntyPbYfcXAAAA","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:48:33"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:48:37"}
+{"name":"asdasdas","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:48:43"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:48:44"}
+{"name":"asdasdas","id":"LmcFNT96BwW84YdZAAAC","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:48:44"}
+{"name":"sadasda","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:48:47"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:48:47"}
+{"name":"sadasda","id":"z_40ykbKUoXNKUHqAAAD","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:48:47"}
+{"name":"asdasdas","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:48:50"}
+{"name":"asdasdas","id":"LmcFNT96BwW84YdZAAAC","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:48:50"}
+{"name":"asdasd","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:48:59"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:48:59"}
+{"name":"asdasd","id":"4ru5Wp_Bnhs8NvV4AAAE","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:48:59"}
+{"name":"asdasd","id":"","infoBox":false,"infoBoxClass":"white","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:49:09"}
+{"name":"asdasd","id":"4ru5Wp_Bnhs8NvV4AAAE","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:49:09"}
+{"name":"asdasd","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 16:49:20"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 16:49:20"}
+{"name":"asdasd","id":"SbKO0eA5dj9DG4PLAAAF","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 16:49:20"}
+{"name":"sadasda","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:49:24"}
+{"name":"sadasda","id":"z_40ykbKUoXNKUHqAAAD","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:49:24"}
+{"name":"asdasd","id":"","infoBox":false,"infoBoxClass":"white","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-06 16:49:36"}
+{"name":"asdasd","id":"SbKO0eA5dj9DG4PLAAAF","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:49:36"}
+{"name":"","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 16:50:02"}
+{"message":"SIGINT signal recieved.","level":"info","timestamp":"2020-07-06 18:44:21"}
+{"name":"dsadas","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 18:45:24"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 18:45:25"}
+{"name":"dsadas","id":"Oa5Dq3HW4pHVlXeNAAAA","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 18:45:25"}
+{"name":"dsadasddas","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-06 18:45:29"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-06 18:45:29"}
+{"name":"dsadasddas","id":"0mFUByjplQB2zwkUAAAB","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-06 18:45:29"}
+{"name":"dsadasddas","chatMessage":"","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 18:45:31"}
+{"name":"dsadasddas","chatMessage":"","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 18:45:31"}
+{"name":"dsadasddas","chatMessage":"","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 18:45:31"}
+{"name":"dsadasddas","chatMessage":"","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 18:45:31"}
+{"name":"dsadasddas","chatMessage":"","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 18:45:31"}
+{"name":"dsadasddas","chatMessage":"","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 18:45:31"}
+{"name":"dsadasddas","chatMessage":"dsad","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 18:45:32"}
+{"name":"dsadasddas","chatMessage":"d","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 18:45:32"}
+{"name":"dsadasddas","chatMessage":"dda","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 18:45:32"}
+{"name":"dsadasddas","chatMessage":"d","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 18:45:33"}
+{"name":"dsadasddas","chatMessage":"dsa","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-06 18:45:33"}
+{"message":"SIGINT signal recieved.","level":"info","timestamp":"2020-07-06 18:45:38"}
+{"message":"Shutting down server","level":"info","timestamp":"2020-07-06 18:45:38"}
+{"name":"dsadas","id":"Oa5Dq3HW4pHVlXeNAAAA","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 18:45:38"}
+{"name":"dsadasddas","id":"0mFUByjplQB2zwkUAAAB","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-06 18:45:38"}
+{"message":"server shut down.","level":"info","timestamp":"2020-07-06 18:45:38"}
