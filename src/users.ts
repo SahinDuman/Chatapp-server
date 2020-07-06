@@ -2,13 +2,8 @@ export interface User {
   name: string,
   id?: string
 }
-
-let users: User[] = [  
-  {name: 'Peter Pevensie'},
-  {name: 'Susan Pevensie'},
-  {name: 'Lucy Pevensie'},
-  {name: 'Edmund Pevensie'}
-];
+//all active users will be stored here
+export let users: User[] = [];
 
 export const addUser = ({name}:any) => {
   const regex = /^([A-Za-z0-9 _-]+)*$/gi;
@@ -38,15 +33,17 @@ export const giveUserSocketId = (name:string, id:string) => {
     userObj.id = id;
 
     users = [...users, userObj];
-    console.log(userObj);
     return userObj;
-  } 
+  }
+  return {error: 'No user with that name exists'};
 }
 
 export const removeUser = (id:string) => {
   const index = users.findIndex(user => user.id === id);
 
   if(index !== -1) return users.splice(index, 1)[0];
+
+  return {error: 'Could not find user'}
 }
 
 export const findUserById = (id:string) => users.find((user:User) => user.id === id);
