@@ -115,6 +115,7 @@ process.on('SIGINT', () => {
 process.on('SIGTERM', () => {
   logger.info('SIGTERM signal recieved.');
   logger.info('Shutting down server');
+  
   if(io) {
     io.close(() => {
       logger.info('server shut down.');
