@@ -15,7 +15,7 @@ import { User } from './models';
 //variables (configurable)
 const CHATROOM:string = 'chatroom';
 const CHATBOT:string = 'BOT: Aslan';
-const INACTIVITYTIMELIMIT:number|string = process.env.INACTIVITY_TIME || 300000; //5min
+const INACTIVITYTIMELIMIT:number = 300000; //5min
 const port: string | number = process.env.PORT || 5000;
 const logDir:string = process.env.LOG_DIRECTORY || 'log';
 
