@@ -8,6 +8,7 @@ import fs from 'fs';
 //imports
 import {giveUserSocketId, findUserById, removeUser }  from './users'
 import { logger } from './utils/logger';
+import { IsNullOrWhitespace } from './utils/validate';
 import router from './router';
 
 //variables
@@ -80,8 +81,11 @@ io.on('connect', (socket) => {
       }, INACTIVITYTIMELIMIT); 
     }
 
-    socket.emit('message', { name: message.name, message: message.chatMessage, role: 'client' });
-    socket.broadcast.to(CHATROOM).emit('message', { name: message.name, message: message.chatMessage, role: 'other' });
+    //emit message to clients if its not nul or whitespace (empty). 
+    if(!IsNullOrWhitespace(message.chatMessage)) {
+      socket.emit('message', { name: message.name, message: message.chatMessage, role: 'client' });
+      socket.broadcast.to(CHATROOM).emit('message', { name: message.name, message: message.chatMessage, role: 'other' });
+    }
 
   })
 
