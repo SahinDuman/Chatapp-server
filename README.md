@@ -14,5 +14,5 @@ _______________________________________________________________________
 
 Can also do:
 "npm run build" --> "npm run start"
-to run the compiled version of the server. 
+to run the compiled version of the server.
 

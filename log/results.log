@@ -1,6 +1,0 @@
-{"name":"Sahun ","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-07 15:18:42"}
-{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-07 15:18:42"}
-{"name":"Sahun ","id":"dC9GBAZnhQrMv7TNAAAA","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-07 15:18:42"}
-{"name":"Sahun ","id":"","infoBox":false,"infoBoxClass":"white","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-07 15:18:45"}
-{"name":"Sahun ","id":"dC9GBAZnhQrMv7TNAAAA","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-07 15:18:45"}
-{"message":"SIGINT signal recieved.","level":"info","timestamp":"2020-07-07 15:19:44"}
