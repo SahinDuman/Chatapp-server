@@ -94,7 +94,7 @@ io.on('connect', (socket) => {
     socket.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message:`${user.name} has left the chat!`, role: 'admin',});
     socket.emit('leave_chat', {message: 'Hope you had fun, bye!'})
     socket.leave(CHATROOM);
-  })
+  });
 
   //disconnect triggers everything that is needed when server disconnects the socket.
   socket.on('disconnect', (reason) => {
@@ -114,7 +114,7 @@ io.on('connect', (socket) => {
   })
 });
 
-server.listen(port, () => console.log(`Server has started.`));
+server.listen(port, () => logger.info(`Server has started.`));
 
 
 //triggers things that need to be done on SIGINT and SIGTERM, close the server/socket properly. 

@@ -1,0 +1,33 @@
+{"name":"   ","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-07 15:27:50"}
+{"name":"Sahin","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-07 15:27:52"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-07 15:27:53"}
+{"name":"Sahin","id":"TkaPFAkj1iksIoG8AAAA","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-07 15:27:53"}
+{"name":"Sahin","id":"TkaPFAkj1iksIoG8AAAA","level":"info","message":"USER DISCONNECTED DUE TO INACTIVITY","timestamp":"2020-07-07 15:28:53"}
+{"name":"Sahin","id":"TkaPFAkj1iksIoG8AAAA","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-07 15:28:53"}
+{"name":"dsadas","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-07 15:35:42"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-07 15:35:42"}
+{"name":"dsadas","id":"U3_UyFMG2X0DouZ5AAAB","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-07 15:35:42"}
+{"name":"dsadas","id":"","infoBox":false,"infoBoxClass":"red","enteredChat":true,"level":"info","message":"USER LEFT CHAT","timestamp":"2020-07-07 15:35:45"}
+{"name":"dsadas","id":"U3_UyFMG2X0DouZ5AAAB","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-07 15:35:45"}
+{"name":"Reeee","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-07 15:35:47"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-07 15:35:47"}
+{"name":"Reeee","id":"Tp_7mBO4V2nsr-2pAAAC","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-07 15:35:47"}
+{"name":"Reeee","id":"Tp_7mBO4V2nsr-2pAAAC","level":"info","message":"USER DISCONNECTED DUE TO INACTIVITY","timestamp":"2020-07-07 15:36:47"}
+{"name":"Reeee","id":"Tp_7mBO4V2nsr-2pAAAC","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-07 15:36:47"}
+{"name":"asdasdsad","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-07 15:38:03"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-07 15:38:03"}
+{"name":"asdasdsad","id":"JM67BcepeOpbTe3lAAAD","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-07 15:38:03"}
+{"name":"asdasdsad","id":"JM67BcepeOpbTe3lAAAD","level":"info","message":"USER DISCONNECTED DUE TO INACTIVITY","timestamp":"2020-07-07 15:39:03"}
+{"name":"asdasdsad","id":"JM67BcepeOpbTe3lAAAD","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-07 15:39:03"}
+{"name":"dsadsad","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-07 16:01:02"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-07 16:01:02"}
+{"name":"dsadsad","id":"Ilma6sfl_PtLcCGTAAAE","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-07 16:01:02"}
+{"name":"reee","level":"info","message":"RECIEVED A POST REQUEST FROM /register","timestamp":"2020-07-07 16:01:07"}
+{"message":"WEBSOCKET CONNECTION ESTABLISHED","level":"info","timestamp":"2020-07-07 16:01:07"}
+{"name":"reee","id":"JydGnZFlLOi1iRtCAAAF","level":"info","message":"USER ENETERED CHAT","timestamp":"2020-07-07 16:01:07"}
+{"name":"reee","chatMessage":"sdsadsad","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-07 16:01:09"}
+{"name":"dsadsad","chatMessage":"dsajbdasudnsad","level":"info","message":"SERVER RECIEVED MESSAGE FROM A USER","timestamp":"2020-07-07 16:01:13"}
+{"name":"reee","id":"JydGnZFlLOi1iRtCAAAF","level":"info","message":"USER DISCONNECTED DUE TO INACTIVITY","timestamp":"2020-07-07 16:02:09"}
+{"name":"reee","id":"JydGnZFlLOi1iRtCAAAF","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-07 16:02:09"}
+{"name":"dsadsad","id":"Ilma6sfl_PtLcCGTAAAE","level":"info","message":"USER DISCONNECTED DUE TO INACTIVITY","timestamp":"2020-07-07 16:02:13"}
+{"name":"dsadsad","id":"Ilma6sfl_PtLcCGTAAAE","level":"info","message":"USER GOT DISCONNECTED","timestamp":"2020-07-07 16:02:13"}
