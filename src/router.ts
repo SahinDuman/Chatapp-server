@@ -1,5 +1,5 @@
 import express, { Request, Response} from 'express';
-import { addUser } from './users';
+import { addUser, nameExists, validateName } from './users';
 import { logger } from './utils/logger'
 const router = express.Router();
 
@@ -9,11 +9,13 @@ const router = express.Router();
  */
 
 router.post("/register", (req: Request, res:Response) => {
-  const {error, name} = addUser(req.body);
+  const name = req.body.name;
+  const nameValid = validateName(name);
+  const doesNameExist = nameExists(name);
   logger.info('RECIEVED A POST REQUEST FROM /register', req.body);
   
-  if(error) {
-    res.send({error});
+  if(!nameValid || doesNameExist) {
+    res.send({error: 'Nickname taken, please try another'});
   } else {
     res.send({name, error: false})
   }

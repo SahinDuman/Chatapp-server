@@ -6,12 +6,13 @@ import bodyParser from 'body-parser';
 import fs from 'fs';
 
 //imports
-import {giveUserSocketId, findUserById, removeUser }  from './users'
+import { findUserById, removeUser, addUser }  from './users'
 import { logger } from './utils/logger';
 import { IsNullOrWhitespace } from './utils/validate';
 import router from './router';
+import { User } from './models';
 
-//variables
+//variables (configurable)
 const CHATROOM:string = 'chatroom';
 const CHATBOT:string = 'BOT: Aslan';
 const INACTIVITYTIMELIMIT:number = 60000;
@@ -33,12 +34,12 @@ app.use(router);
 
 io.on('connect', (socket) => {
   logger.info('WEBSOCKET CONNECTION ESTABLISHED');
-  
+
   // a named setTimeout to be able to reset if user is active.
   let inactivityTimeout: NodeJS.Timeout | null = null;
   
   // function that will be called if user has been inactive for too long (INACTIVITYTIMELIMIT)
-  const ifUserInactive = (name:string) => {
+  const userInactive = (name:string) => {
 
   socket.emit('inactive', {message: 'You got disconnected due to inactivity'});
   socket.leave(CHATROOM);
@@ -46,24 +47,22 @@ io.on('connect', (socket) => {
   }
 
   //entered_chat triggers everything that is needed for when user has entered the chat.
-  socket.on('entered_chat', ({ user }, callback) => {
+  socket.on('entered_chat', ({ user }) => {
     //give user id of its socket id
-    const userWithId = giveUserSocketId(user.name, socket.id);
-    logger.info('USER ENETERED CHAT', userWithId)
-    
+    const registerUser = addUser({name: user.name, id:socket.id});
+    logger.info('USER ENETERED CHAT', registerUser)
+
     socket.join(CHATROOM);
     
-    socket.emit('adminMessage', { user: userWithId, name: CHATBOT, message: `Welcome to the chatroom ${user.name}!`, role: 'admin'});
+    socket.emit('adminMessage', { user: registerUser, name: CHATBOT, message: `Welcome to the chatroom ${user.name}!`, role: 'admin'});
 
     socket.broadcast.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message: `${user.name} has joined the chat!`, role: 'admin'});
 
     //start the inactivity timer when user enters chat
     inactivityTimeout = setTimeout(() => {
-      ifUserInactive(user.name);
-      logger.info('USER DISCONNECTED DUE TO INACTIVITY', userWithId)
-    }, INACTIVITYTIMELIMIT);
-    
-    callback();
+      userInactive(user.name);
+      logger.info('USER DISCONNECTED DUE TO INACTIVITY', registerUser)
+    }, INACTIVITYTIMELIMIT);    
   });
 
   //message triggers everything that is needed when a user sends a message to the server
@@ -76,7 +75,7 @@ io.on('connect', (socket) => {
       clearTimeout(inactivityTimeout);
 
       inactivityTimeout = setTimeout(() => {
-        ifUserInactive(message.name);
+        userInactive(message.name);
         logger.info('USER DISCONNECTED DUE TO INACTIVITY', {name:message.name, id:socket.id})
       }, INACTIVITYTIMELIMIT); 
     }
@@ -86,23 +85,20 @@ io.on('connect', (socket) => {
       socket.emit('message', { name: message.name, message: message.chatMessage, role: 'client' });
       socket.broadcast.to(CHATROOM).emit('message', { name: message.name, message: message.chatMessage, role: 'other' });
     }
-
   })
 
   //leave_chat triggers everything that is needed when the user disconnects from the socket, client-side
-  socket.on('leave_chat', ({user}, callback) => {
+  socket.on('leave_chat', ({user}) => {
     logger.info('USER LEFT CHAT', user)
 
     socket.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message:`${user.name} has left the chat!`, role: 'admin',});
     socket.emit('leave_chat', {message: 'Hope you had fun, bye!'})
     socket.leave(CHATROOM);
-
-    callback();
   })
 
   //disconnect triggers everything that is needed when server disconnects the socket.
   socket.on('disconnect', (reason) => {
-    const user = findUserById(socket.id) || {name: ''};
+    const user = findUserById(socket.id);
     logger.info('USER GOT DISCONNECTED', user);
     
     if (user) socket.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message: `${user.name} left the chat, connection lost`, role: 'admin',  disconnect: true});
