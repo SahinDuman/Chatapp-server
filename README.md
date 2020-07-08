@@ -16,3 +16,14 @@ Can also do:
 "npm run build" --> "npm run start"
 to run the compiled version of the server.
 
+____________________________________________
+
+Will continue working on this project after the test.
+
+Todos:
+* Handle page refresh
+* Refactor to make use of the socket event callbacks (should've read the docs more before the test); 
+* Improve error handling and validation. 
+* Hookup a database or connect to firebase. 
+* send images
+

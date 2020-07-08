@@ -6,11 +6,10 @@ import bodyParser from 'body-parser';
 import fs from 'fs';
 
 //imports
-import { findUserById, removeUser, addUser }  from './users'
+import { findUserById, removeUser, addUser, users }  from './users'
 import { logger } from './utils/logger';
 import { IsNullOrWhitespace } from './utils/validate';
 import router from './router';
-import { User } from './models';
 
 //variables (configurable)
 const CHATROOM:string = 'chatroom';
@@ -44,7 +43,7 @@ io.on('connect', (socket) => {
 
   socket.emit('inactive', {message: 'You got disconnected due to inactivity'});
   socket.leave(CHATROOM);
-  socket.broadcast.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message: `${name} was disconnected due to inactivity`, role: 'admin'});
+  socket.broadcast.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message: `${name} was disconnected due to inactivity`, role: 'admin', users});
   }
 
   //entered_chat triggers everything that is needed for when user has entered the chat.
@@ -55,9 +54,9 @@ io.on('connect', (socket) => {
 
     socket.join(CHATROOM);
     
-    socket.emit('adminMessage', { user: registerUser, name: CHATBOT, message: `Welcome to the chatroom ${user.name}!`, role: 'admin'});
+    socket.emit('adminMessage', { user: registerUser, name: CHATBOT, message: `Welcome to the chatroom ${user.name}!`, role: 'admin', users});
 
-    socket.broadcast.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message: `${user.name} has joined the chat!`, role: 'admin'});
+    socket.broadcast.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message: `${user.name} has joined the chat!`, role: 'admin', users});
 
     //start the inactivity timer when user enters chat
     inactivityTimeout = setTimeout(() => {
@@ -92,7 +91,7 @@ io.on('connect', (socket) => {
   socket.on('leave_chat', ({user}) => {
     logger.info('USER LEFT CHAT', user)
 
-    socket.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message:`${user.name} has left the chat!`, role: 'admin',});
+    socket.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message:`${user.name} has left the chat!`, role: 'admin', users});
     socket.emit('leave_chat', {message: 'Hope you had fun, bye!'})
     socket.leave(CHATROOM);
   });
@@ -102,7 +101,7 @@ io.on('connect', (socket) => {
     const user = findUserById(socket.id);
     logger.info('USER GOT DISCONNECTED', user);
     
-    if (user) socket.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message: `${user.name} left the chat, connection lost`, role: 'admin',  disconnect: true});
+    if (user) socket.to(CHATROOM).emit('adminMessage', { name: CHATBOT, message: `${user.name} left the chat, connection lost`, role: 'admin',  disconnect: true, users});
     
     //removes user from "users" array, so that the nickname can be used again
     removeUser(socket.id);
